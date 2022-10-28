@@ -16,8 +16,8 @@ app.get("/getAll", (req, res) => res.send(names));
 
 app.get("/get/:id", (req, res) => res.send(names[req.params.id]));
 
-app.post("/add", (req, res) => {
-    const newName = req.body.name;
+app.post("/add/:name", (req, res) => {
+    const newName = req.params.name;
     names.push(newName);
     res.status(201).send(names[names.length - 1]);
 });

@@ -1,12 +1,16 @@
-/*import 'bootstrap/dist/css/bootstrap.min.css';*/
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import AddNames from './AddNames';
-import './NamesList';
+import AddNames from './Component/AddNames'
+import NamesList from './Component/NamesList';
+import Axios from './Component/Axios'
+import Names from './Component/NameSchema';
 
 function App() {
   return (
     <div>
-      <AddNames/>
+      Names List
+      {/* <Axios/> */}
+     <Names/>
     </div>
   );
 }
